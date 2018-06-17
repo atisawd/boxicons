@@ -24,7 +24,7 @@ $ npm install boxicons --save
 
 ```html
 <head>
-  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="boxicons.min.css">
 </head>
 ```
 
