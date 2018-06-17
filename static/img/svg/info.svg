@@ -5,6 +5,6 @@
 	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 <g>
 	<rect x="11" y="6" width="2" height="2"/>
-	<polygon points="9,17 9,19 15,19 15,17 13,17 13,12 13,10 11,10 10,10 10,12 11,12 11,17 	"/>
+	<rect x="11" y="10" width="2" height="8"/>
 </g>
 </svg>

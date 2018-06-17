@@ -6,8 +6,8 @@
 <g>
 	<polygon points="5,16 9,12 5,8 5,11 2,11 2,13 5,13 	"/>
 	<polygon points="19,11 19,8 15,12 19,16 19,13 19.928,13 22,13 22,11 19.928,11 	"/>
+	<rect x="11" y="10" width="2" height="4"/>
 	<rect x="11" y="16" width="2" height="4"/>
 	<rect x="11" y="4" width="2" height="4"/>
-	<rect x="11" y="10" width="2" height="4"/>
 </g>
 </svg>
