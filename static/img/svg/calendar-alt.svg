@@ -5,6 +5,6 @@
 	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 <g>
 	<path d="M21,4h-4V2h-2v2H9V2H7v2H3C2.447,4,2,4.447,2,5v16c0,0.553,0.447,1,1,1h18c0.553,0,1-0.447,1-1V5C22,4.447,21.553,4,21,4z
-		 M7,6v1h2V6h6v1h2V6h3v2H4V6H7z M4,20V10h16v10H4z"/>
+		 M20,20H4V10h16V20z M20,8H4V6h3v1h2V6h6v1h2V6h3V8z"/>
 </g>
 </svg>

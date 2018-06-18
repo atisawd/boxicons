@@ -33,10 +33,10 @@ Instead of installing you may use the remote version
 ```html
 <head>
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@1.0.3/css/boxicons.min.css">
+  href="https://cdn.jsdelivr.net/npm/boxicons@1.0.5/css/boxicons.min.css">
   <!-- or -->
   <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@1.0.3/css/boxicons.min.css">
+  href="https://unpkg.com/boxicons@1.0.5/css/boxicons.min.css">
 </head>
 ```
 

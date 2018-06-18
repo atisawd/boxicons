@@ -4,8 +4,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 <g>
-	<path d="M21,3H3C2.447,3,2,3.447,2,4v16c0,0.553,0.447,1,1,1h18c0.553,0,1-0.447,1-1V4C22,3.447,21.553,3,21,3z M20,7h-2V5h2V7z
-		 M16,11H8V5h8V11z M6,11H4V9h2V11z M6,13v2H4v-2H6z M8,13h8v6H8V13z M18,13h2v2h-2V13z M18,11V9h2v2H18z M6,5v2H4V5H6z M4,17h2v2H4
-		V17z M18,19v-2h2v2H18z"/>
+	<path d="M21,3H3C2.447,3,2,3.447,2,4v16c0,0.553,0.447,1,1,1h18c0.553,0,1-0.447,1-1V4C22,3.447,21.553,3,21,3z M6,19H4v-2h2V19z
+		 M6,15H4v-2h2V15z M6,11H4V9h2V11z M6,7H4V5h2V7z M16,19H8v-6h8V19z M16,11H8V5h8V11z M20,19h-2v-2h2V19z M20,15h-2v-2h2V15z
+		 M20,11h-2V9h2V11z M20,7h-2V5h2V7z"/>
 </g>
 </svg>
