@@ -5,7 +5,8 @@
   "description": "Single Page Apps for GitHub Pages",
   "scripts": {
     "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "optimize-svg": "svgo -f ./static/img/svg"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "svgo": "^1.0.5",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   }

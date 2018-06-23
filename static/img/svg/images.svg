@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<path d="M21,2H7C6.447,2,6,2.447,6,3v14c0,0.553,0.447,1,1,1h14c0.553,0,1-0.447,1-1V3C22,2.447,21.553,2,21,2z M20,16H8v-2h12V16z
-		 M20,12H8V4h12V12z"/>
-	<path d="M4,8H2v13c0,0.553,0.447,1,1,1h13v-2H4V8z"/>
-	<polygon points="15,10 18,10 15,6 13,8.667 12,8 10,10 12,10 	"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21 2H7a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-1 14H8v-2h12v2zm0-4H8V4h12v8z"/><path d="M4 8H2v13a1 1 0 0 0 1 1h13v-2H4V8zM15 10h3l-3-4-2 2.667L12 8l-2 2h2z"/></svg>

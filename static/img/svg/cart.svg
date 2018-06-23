@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<path d="M8.078,16.385C8.233,16.757,8.597,17,9.001,17H18c0.417,0,0.79-0.259,0.937-0.648l3-8c0.115-0.308,0.072-0.651-0.114-0.921
-		C21.635,7.161,21.328,7,21,7H6.333L4.923,3.615C4.768,3.243,4.404,3,4,3H2v2h1.333L8.078,16.385z M19.557,9l-2.25,6H9.667l-2.5-6
-		H19.557z"/>
-	<circle cx="10.5" cy="20.5" r="1.5"/>
-	<circle cx="16.438" cy="20.5" r="1.5"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M8.078 16.385a1 1 0 0 0 .923.615H18c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7H6.333l-1.41-3.385A1 1 0 0 0 4 3H2v2h1.333l4.745 11.385zM19.557 9l-2.25 6h-7.64l-2.5-6h12.39z"/><circle cx="10.5" cy="20.5" r="1.5"/><circle cx="16.438" cy="20.5" r="1.5"/></svg>
