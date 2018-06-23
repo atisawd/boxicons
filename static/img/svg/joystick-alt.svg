@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<circle cx="15" cy="13" r="1"/>
-	<circle cx="17" cy="11" r="1"/>
-	<polygon points="10,9 8,9 8,11 6,11 6,13 8,13 8,15 10,15 10,13 12,13 12,11 10,11 	"/>
-	<path d="M15.016,5.031H8.984C5.133,5.031,2,8.164,2,12.016C2,15.867,5.133,19,8.984,19h6.031C18.867,19,22,15.867,22,12.016
-		C22,8.164,18.867,5.031,15.016,5.031z M15.016,17H8.984C6.236,17,4,14.764,4,12.016s2.236-4.985,4.984-4.985h6.031
-		c2.748,0,4.984,2.236,4.984,4.985S17.764,17,15.016,17z"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="15" cy="13" r="1"/><circle cx="17" cy="11" r="1"/><path d="M10 9L8 9 8 11 6 11 6 13 8 13 8 15 10 15 10 13 12 13 12 11 10 11z"/><path d="M15.016,5.031H8.984C5.133,5.031,2,8.164,2,12.016C2,15.867,5.133,19,8.984,19h6.031C18.867,19,22,15.867,22,12.016 C22,8.164,18.867,5.031,15.016,5.031z M15.016,17H8.984C6.236,17,4,14.764,4,12.016s2.236-4.985,4.984-4.985h6.031 c2.748,0,4.984,2.236,4.984,4.985S17.764,17,15.016,17z"/></svg>

@@ -1,0 +1,4 @@
+plugins:
+    - removeViewBox: false
+    - convertPathData: false
+
