@@ -17,7 +17,11 @@ To install via npm, simply do the following:
 ```bash
 $ npm install boxicons --save
 ```
+import the module
 
+```javscript
+import 'boxicons/css/boxicons.css';
+```
 ## Usage
 
 1. Include the stylesheet on your document's `<head>`
