@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<rect x="2" y="5" width="20" height="2"/>
-	<rect x="2" y="9" width="20" height="2"/>
-	<rect x="2" y="13" width="10" height="2"/>
-	<rect x="6" y="12.984" transform="matrix(0.0029 1 -1 0.0029 24.9638 10.9317)" width="2" height="10"/>
-	<polygon points="19,16 19,13 17,13 17,16 14.78,16 14,16 14,18 14.78,18 17,18 17,21 19,21 19,18 21.063,18 22,18 22,16 21.063,16 
-			"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2 5H22V7H2zM2 9H22V11H2zM2 13H12V15H2z"/><path transform="rotate(89.834 7 17.984)" d="M6 12.984H8V22.984H6z"/><path d="M19 16L19 13 17 13 17 16 14.78 16 14 16 14 18 14.78 18 17 18 17 21 19 21 19 18 21.063 18 22 18 22 16 21.063 16z"/></svg>
