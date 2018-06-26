@@ -8,7 +8,15 @@
 _High Quality web friendly icons_
 
 'Boxicons' is a carefully designed open source iconset with 400+ icons. It's crafted to look enrich your website/app experience.
-You can check out more detail instructions [here](https://boxicons.com/get-started)
+
+
+_Announcing Ionicons v1.0.6!_
+
+50 more icons have been added to the list, and some pre built CSS classes to perform various functions like, rotate, animate and add border to the icons.
+- A few bug fixes on the existing icons has been to make it pixel perfect.
+
+You can check out the detailed documentation [here](https://boxicons.com/get-started)
+
 
 ## Installation
 
