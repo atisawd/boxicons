@@ -10,7 +10,7 @@ _High Quality web friendly icons_
 'Boxicons' is a carefully designed open source iconset with 400+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Ionicons v1.0.6!_
+_Announcing Ionicons v1.0.7!_
 
 50 more icons have been added to the list, and some pre built CSS classes to perform various functions like, rotate, animate and add border to the icons.
 - A few bug fixes on the existing icons has been to make it pixel perfect.
@@ -45,10 +45,10 @@ Instead of installing you may use the remote version
 ```html
 <head>
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@1.0.6/css/boxicons.min.css">
+  href="https://cdn.jsdelivr.net/npm/boxicons@1.0.7/css/boxicons.min.css">
   <!-- or -->
   <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@1.0.6/css/boxicons.min.css">
+  href="https://unpkg.com/boxicons@1.0.7/css/boxicons.min.css">
 </head>
 ```
 
