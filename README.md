@@ -7,8 +7,8 @@
 
 _High Quality web friendly icons_
 
-'Boxicons' is a carefully designed open source iconset with 350+ icons. It's crafted to look enrich your website/app experience.
-[You can check out all the icons here!](https://boxicons.com)
+'Boxicons' is a carefully designed open source iconset with 400+ icons. It's crafted to look enrich your website/app experience.
+You can check out more detail instructions [here](https://boxicons.com/get-started)
 
 ## Installation
 
@@ -37,10 +37,10 @@ Instead of installing you may use the remote version
 ```html
 <head>
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@1.0.5/css/boxicons.min.css">
+  href="https://cdn.jsdelivr.net/npm/boxicons@1.0.6/css/boxicons.min.css">
   <!-- or -->
   <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@1.0.5/css/boxicons.min.css">
+  href="https://unpkg.com/boxicons@1.0.6/css/boxicons.min.css">
 </head>
 ```
 
