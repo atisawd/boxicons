@@ -1,7 +1,5 @@
 # BoxIcons 
 [![GitHub issues](https://img.shields.io/github/issues/atisawd/boxicons.svg)](https://github.com/atisawd/boxicons/issues)
-[![GitHub license](https://img.shields.io/github/license/atisawd/boxicons.svg)](https://github.com/atisawd/boxicons/blob/master/LICENSE)
-
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/atisawd/boxicons.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fatisawd%2Fboxicons)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/atisawd)
 
