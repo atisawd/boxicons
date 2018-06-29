@@ -4,7 +4,7 @@
   "private": true,
   "description": "High Quality web friendly icons",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
+    "start": "webpack-dev-server --history-api-fallback --hot --open",
     "build": "webpack -p",
     "optimize-svg": "svgo --config=.svgo.yml -f static/img/svg"
   },
@@ -25,15 +25,18 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-builtin-classes": "^0.6.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.11",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "svgo": "^1.0.5",
+    "to-string-loader": "^1.1.5",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   }
