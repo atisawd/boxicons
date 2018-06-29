@@ -1,8 +1,8 @@
 {
-  "name": "spa-github-pages",
-  "version": "5.1.0",
+  "name": "boxicons",
+  "version": "1.0.6",
   "private": true,
-  "description": "Single Page Apps for GitHub Pages",
+  "description": "High Quality web friendly icons",
   "scripts": {
     "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
     "build": "webpack -p",
@@ -10,9 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/spa-github-pages.git"
+    "url": "git+https://github.com/atisawd/boxicons.git"
   },
-  "author": "Rafael Pedicini <code@rafrex.com>",
+  "author": "Atisa(Aniket Suvarna)  <atisawd@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.0",
