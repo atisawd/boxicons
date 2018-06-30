@@ -16,6 +16,10 @@ TEMPLATE.innerHTML = `
 <style>
 :host {
   display: inline-block;
+  font-size: initial;
+  box-sizing: border-box;
+}
+:host #icon {
   width: 1em;
   height: 1em;
 }
@@ -35,12 +39,12 @@ TEMPLATE.innerHTML = `
     width: 3.0rem;
     height: 3.0rem;
 }
-:host([shape=square]) {
+:host([shape=square]) #icon {
     padding: .25em;
     border: .07em solid rgba(0,0,0,.1);
     border-radius: .25em;
 }
-:host([shape=circle]) {
+:host([shape=circle]) #icon {
     padding: .25em;
     border: .07em solid rgba(0,0,0,.1);
     border-radius: 50%;
@@ -50,6 +54,9 @@ svg {
   width: 100%;
   height: 100%;
 }
+#icon {
+    box-sizing: border-box;
+} 
 ${animationsCss}
 ${transformationsCss}
 </style>

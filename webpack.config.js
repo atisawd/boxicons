@@ -1,3 +1,4 @@
+const path = require('path');
 const webpack = require('webpack');
 const WrapperPlugin = require('wrapper-webpack-plugin');
 const packageJson = require('./package.json');
@@ -5,6 +6,7 @@ const packageJson = require('./package.json');
 module.exports = {
   entry: `${__dirname}/src/index.js`,
   output: {
+    path: path.resolve(__dirname, 'dist'),
     library: 'BoxIconElement',
     libraryTarget: 'umd',
     filename: 'box-icon-element.js',
