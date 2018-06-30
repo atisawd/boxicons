@@ -18,10 +18,8 @@ TEMPLATE.innerHTML = `
   display: inline-block;
   font-size: initial;
   box-sizing: border-box;
-}
-:host #icon {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
 }
 :host([size=xs]) {
     width: 0.8rem;
