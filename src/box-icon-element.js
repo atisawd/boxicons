@@ -83,6 +83,22 @@ export class BoxIconElement extends HTMLElement {
   width: 1em;
   height: 1em;
 }
+:host([size=xs]) {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+:host([size=sm]) {
+    width: 1.55rem;
+    height: 1.55rem;
+}
+:host([size=md]) {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+:host([size=lg]) {
+    width: 3.0rem;
+    height: 3.0rem;
+}
 #icon,
 svg {
   width: 100%;
@@ -103,21 +119,27 @@ ${transformationsCss}
       case 'name':
         handleNameChange(this, oldVal, newVal);
         break;
-
+      case 'color':
+          this._state.$iconHolder.style.fill = newVal || "";
+        break;
+      case 'size':
+          handleSizeChange(this, oldVal, newVal);
+        break;
     }
   }
 }
 
 function handleNameChange(inst, oldVal, newVal) {
-  inst._state.currentName = newVal;
-  inst._state.$iconHolder.textContent = '';
+  const state = inst._state;
+  state.currentName = newVal;
+  state.$iconHolder.textContent = '';
 
   if (newVal) {
     const iconUrl = `${inst.constructor.cdnUrl}/${newVal}.svg`;
     inst.constructor.getIconSvg(iconUrl)
         .then((iconData) => {
-          if (inst._state.currentName === newVal) {
-            inst._state.$iconHolder.innerHTML = iconData;
+          if (state.currentName === newVal) {
+            state.$iconHolder.innerHTML = iconData;
           }
         })
         .catch((error) => {
@@ -126,3 +148,18 @@ function handleNameChange(inst, oldVal, newVal) {
   }
 }
 
+function handleSizeChange(inst, oldVal, newVal) {
+    const state = inst._state;
+
+    if (state.size) {
+        state.$iconHolder.style.width = state.$iconHolder.style.height = "";
+        state.size = state.sizeType = null;
+    }
+
+    // If the size is not one of the short-hand ones, then it must be a
+    // css size unit - add it directly to the icon holder.
+    if (newVal && !/^(xs|sm|md|lg)$/.test(state.size)) {
+        state.size = newVal.trim();
+        state.$iconHolder.style.width = state.$iconHolder.style.height = state.size;
+    }
+}
