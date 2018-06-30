@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test Custom Element</title>
+    <style>
+        #prototype {
+            margin-bottom: 5em;
+        }
+        #controls {
+            padding: 1em 0.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid lightgrey;
+        }
+        .icon {
+            display: inline-block;
+            margin: 1em;
+            padding: 1em;
+            width: 150px;
+            text-align: center;
+        }
+        .icon:hover {
+            transition: box-shadow 0.5s;
+            box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+        }
+        .icon > div {
+            white-space: nowrap;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body>
+<h1>Development Page - <code>box-icon</code> Custom Element</h1>
+<div id="prototype">
+    <div id="controls">
+        <span>Color</span> <input name="color" type="color">
+        <span>Size</span> <input name="size" type="text" placeholder="xs, sm, md, lg or size">
+        <span>rotate</span>
+        <select name="rotate">
+            <option value="" selected>(none)</option>
+            <option value="90">90 deg</option>
+            <option value="180">180 deg</option>
+            <option value="270">270 deg</option>
+        </select>
+        <span>Flip</span>
+        <select name="flip">
+            <option value="" selected>(none)</option>
+            <option value="horizontal">horizontal</option>
+            <option value="vertical">vertical</option>
+        </select>
+        <span>Shape</span>
+        <select name="shape">
+            <option value="" selected>(none)</option>
+            <option value="square">square</option>
+            <option value="circle">circle</option>
+        </select>
+        <span>Animation</span>
+        <select name="animation">
+            <option value="" selected>(none)</option>
+            <option value="spin">spin</option>
+            <option value="tada">tada</option>
+            <option value="flashing">flashing</option>
+            <option value="burst">burst</option>
+            <option value="fade-left">fade-left</option>
+            <option value="fade-right">fade-right</option>
+            <option value="spin-hover">spin-hover</option>
+            <option value="tada-hover">tada-hover</option>
+            <option value="flashing-hover">flashing-hover</option>
+            <option value="burst-hover">burst-hover</option>
+            <option value="fade-left-hover">fade-left-hover</option>
+            <option value="fade-right-hover">fade-right-hover</option>
+        </select>
+    </div>
+</div>
+
+<script src="box-icon-element.js"></script>
+<script type="module">
+    const icons = ["adjust", "alarm", "alarm-off", "album", "align-left", "align-middle", "align-right", "anchor", "aperture", "archive", "archive-in", "archive-out", "arrow-back", "asterisk", "at", "award", "bar-chart", "bar-chart-alt", "bar-chart-square", "barcode", "basketball", "battery", "battery-charging", "battery-full", "battery-low", "behance", "bell", "bell-minus", "bell-off", "bell-plus", "bitcoin", "block", "bluetooth", "body", "bold", "bolt", "book", "book-bookmark", "bookmark", "bookmark-minus", "bookmark-plus", "bookmarks", "bookmark-star", "book-open", "briefcase", "briefcase-alt", "broadcast", "bucket", "bug", "building", "bulb", "bullseye", "buoy", "calculator", "calendar", "calendar-add", "calendar-alt", "calendar-check", "calendar-minus", "calendar-remove", "camera", "camera-alt", "camera-off", "capsule", "captions", "car", "carousel", "cart", "cart-alt", "cast", "categories", "chalkboard", "chart", "check", "checkbox", "checkbox-checked", "checkbox-square", "chevron-down", "chevron-left", "chevron-right", "chevrons-down", "chevrons-left", "chevrons-right", "chevrons-up", "chevron-up", "chip", "chrome", "clipboard", "closet", "cloud", "cloud-download", "cloud-drizzle", "cloud-lightning", "cloud-light-rain", "cloud-rain", "cloud-snow", "cloud-upload", "code", "code-curly", "codepen", "coffee", "cog", "collapse", "collection", "columns", "command", "compass", "contact", "conversation", "copy", "copyright", "coupon", "credit-card", "crop", "crosshair", "crown", "cube", "cut", "dashboard", "data", "desktop", "detail", "diamond", "directions", "discount", "dislike", "dock-bottom", "dock-left", "dock-right", "dock-top", "dollar", "dollar-circle", "dots-horizontal", "dots-horizontal-rounded", "dots-vertical", "dots-vertical-rounded", "down-arrow-circle", "down-arrow-outline", "download", "download-alt", "downvote", "dribbble", "drink", "droplet", "duplicate", "edit", "eject", "envelope", "eraser", "error", "error-circle", "exclamation", "exit-fullscreen", "expand", "export", "eyedropper", "facebook", "facebook-alt", "fast-forward", "fast-forward-circle", "female", "file", "file-add", "file-image", "files", "film", "filter", "filter-alt", "first-aid", "first-page", "flag", "flag-alt", "flask", "folder", "folder-minus", "folder-open", "folder-plus", "font", "fullscreen", "gift", "git-branch", "git-commit", "git-compare", "github", "git-merge", "git-pull-request", "git-repo-forked", "globe", "globe-alt", "google", "grid", "grid-alt", "group", "hash", "hdd", "heading", "headphone", "heart", "hexagon", "hide", "history", "home", "home-alt", "horizontal-center", "hot", "hourglass", "idea", "image", "image-alt", "images", "import", "inbox", "infinite", "info", "info-circle", "instagram", "italic", "joystick", "joystick-alt", "justify", "key", "laptop", "last-page", "layer", "layout", "left-arrow-circle", "left-arrow-outline", "left-bottom-arrow-circle", "left-indent", "left-top-arrow-circle", "like", "link", "link-alt", "linkedin", "link-external", "list", "list-add", "list-alt", "list-bullet", "list-check", "list-remove", "loader", "loader-circle", "loader-circle-alt", "lock", "lock-open", "log-in", "log-out", "male", "map", "map-alt", "map-pin", "menu", "message", "message-alt", "message-detail", "message-rounded", "message-rounded-alt", "microphone", "microphone-off", "minus", "minus-circle", "mobile", "mobile-alt", "mobile-message", "moon", "mouse", "move", "music", "navigation", "news", "newsletter", "notification", "notification-off", "octagon", "package", "paperclip", "paper-plane", "paragraph", "paste", "pause", "pause-circle", "pen", "pencil", "phone", "phone-call", "phone-incoming", "phone-outgoing", "pie-chart", "pie-chart-alt", "pin", "play", "play-circle", "playlist", "plug", "plus", "plus-circle", "poll", "popular", "power-off", "printer", "pulse", "purchase-tag", "question-mark", "quote-left", "quote-right", "radar", "radio", "radio-circle", "radio-circle-marked", "rectangle", "redo", "rename", "reply", "reply-all", "report", "repost", "reset", "revision", "rewind", "ribbon", "right-arrow-circle", "right-arrow-outline", "right-down-arrow-circle", "right-indent", "right-top-arrow-circle", "rotate", "rss", "ruler", "save", "screenshot", "search", "select-arrows", "selection", "select-multiple", "send", "server", "share", "share-alt", "shield", "shield-alt", "shopping-bag", "shopping-bag-alt", "show", "shuffle", "shuffle-alt", "sidebar", "sitemap", "skip-next", "skip-next-circle", "skip-previous", "skip-previous-circle", "skull", "slider", "smiley-happy", "smiley-meh", "smiley-sad", "snowflake", "sort", "spectacles", "spreadsheet", "star", "station", "stop", "stop-circle", "stopwatch", "store", "stumble-upon", "subdirectory-left", "subdirectory-right", "sun", "support", "sync", "tab", "table", "tag", "tag-remove", "target-lock", "task", "tennis-ball", "terminal", "text", "thermometer", "time", "timer", "toggle", "toggle-left", "toggle-right", "torch", "to-top", "trash", "trash-alt", "trending-down", "trending-up", "triangle", "trophy", "truck", "t-shirt", "tumblr", "tv", "twitter", "umbrella", "underline", "undo", "up-arrow-circle", "up-arrow-outline", "upload", "upvote", "usb", "user", "user-check", "user-circle", "user-detail", "user-minus", "user-plus", "user-remove", "vertical-center", "video", "video-off", "videos", "vimeo", "voicemail", "volume", "volume-full", "volume-low", "volume-mute", "wallet", "watch", "watch-alt", "whatsapp", "widget", "wifi", "window", "window-close", "window-open", "windows", "world", "wrench", "x", "x-circle", "youtube", "zap", "zoom-in", "zoom-out"];
+    const $content = document.createDocumentFragment();
+    const $prototype =document.getElementById("prototype");
+    const $controls = document.getElementById("controls");
+
+    icons.forEach(function (iconName) {
+        const $div = document.createElement("div");
+        $div.setAttribute("class", "icon");
+        $div.innerHTML = `<div>${iconName}</div><box-icon name="${iconName}"></box-icon>`;
+        $content.appendChild($div);
+    });
+
+    $prototype.appendChild($content);
+
+    const allIcons = $prototype.querySelectorAll("box-icon");
+    const setIconAttr = function (attrName, ev) {
+        allIcons.forEach($icon => {
+            $icon.setAttribute(attrName, ev.target.value);
+        });
+    };
+
+    $controls.querySelector("input[name='color']").addEventListener("input", setIconAttr.bind(null, "color"));
+    $controls.querySelector("input[name='size']").addEventListener("input", setIconAttr.bind(null, "size"));
+    $controls.querySelector("select[name='rotate']").addEventListener("input", setIconAttr.bind(null, "rotate"));
+    $controls.querySelector("select[name='flip']").addEventListener("input", setIconAttr.bind(null, "flip"));
+    $controls.querySelector("select[name='shape']").addEventListener("input", setIconAttr.bind(null, "shape"));
+    $controls.querySelector("select[name='animation']").addEventListener("input", setIconAttr.bind(null, "animation"));
+</script>
+</body>
+</html>
