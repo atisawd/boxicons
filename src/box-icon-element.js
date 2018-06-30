@@ -4,10 +4,56 @@ import transformationsCss from '../static/css/transformations.css';
 
 
 //= ======================================================
+const GLOBAL = window;
 const CACHE = {}; // iconName: Promise()
 const CSS_CLASS_PREFIX = 'bx-';
 const CSS_CLASS_PREFIX_ROTATE = `${CSS_CLASS_PREFIX}rotate-`;
 const CSS_CLASS_PREFIX_FLIP = `${CSS_CLASS_PREFIX}flip-`;
+const TEMPLATE = document.createElement('template');
+const usingShadyCss = () => !!GLOBAL.ShadyCSS;
+
+TEMPLATE.innerHTML = `
+<style>
+:host {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+:host([size=xs]) {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+:host([size=sm]) {
+    width: 1.55rem;
+    height: 1.55rem;
+}
+:host([size=md]) {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+:host([size=lg]) {
+    width: 3.0rem;
+    height: 3.0rem;
+}
+:host([shape=square]) {
+    padding: .25em;
+    border: .07em solid rgba(0,0,0,.1);
+    border-radius: .25em;
+}
+:host([shape=circle]) {
+    padding: .25em;
+    border: .07em solid rgba(0,0,0,.1);
+    border-radius: 50%;
+}
+#icon,
+svg {
+  width: 100%;
+  height: 100%;
+}
+${animationsCss}
+${transformationsCss}
+</style>
+<div id="icon"></div>`;
 
 
 /**
@@ -73,55 +119,20 @@ export class BoxIconElement extends HTMLElement {
      * @param {String} [tagName=this.tagName]
      */
   static define(tagName) {
-    customElements.define(tagName || this.tagName, this);
+    tagName = tagName || this.tagName;
+    if (usingShadyCss()) {
+      GLOBAL.ShadyCSS.prepareTemplate(TEMPLATE, tagName);
+    }
+    customElements.define(tagName, this);
   }
 
   constructor() {
     super();
     this.$ui = this.attachShadow({ mode: 'open' });
-    this.$ui.innerHTML = `
-<style>
-:host {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-}
-:host([size=xs]) {
-    width: 0.8rem;
-    height: 0.8rem;
-}
-:host([size=sm]) {
-    width: 1.55rem;
-    height: 1.55rem;
-}
-:host([size=md]) {
-    width: 2.25rem;
-    height: 2.25rem;
-}
-:host([size=lg]) {
-    width: 3.0rem;
-    height: 3.0rem;
-}
-:host([shape=square]) {
-    padding: .25em;
-    border: .07em solid rgba(0,0,0,.1);
-    border-radius: .25em;
-}
-:host([shape=circle]) {
-    padding: .25em;
-    border: .07em solid rgba(0,0,0,.1);
-    border-radius: 50%;
-}
-#icon,
-svg {
-  width: 100%;
-  height: 100%;
-}
-${animationsCss}
-${transformationsCss}
-</style>
-<div id="icon"></div>`;
-
+    this.$ui.appendChild(this.ownerDocument.importNode(TEMPLATE.content, true));
+    if (usingShadyCss()) {
+        GLOBAL.ShadyCSS.styleElement(this);
+    }
     this._state = {
       $iconHolder: this.$ui.getElementById('icon'),
     };
@@ -165,6 +176,12 @@ ${transformationsCss}
         }
         break;
     }
+  }
+
+  connectedCallback() {
+      if (usingShadyCss()) {
+        GLOBAL.ShadyCSS.styleElement(this);
+      }
   }
 }
 
