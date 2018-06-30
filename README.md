@@ -100,7 +100,12 @@ The `<box-icon>` custom element supports the following attributes:
 -   `shape`: one of the following values: `square`, `circle`
 -   `animation`: One of the following values: `spin`, `tada`, `flashing`, `burst`, `fade-left`, `fade-right`, `spin-hover`, `tada-hover`, `flashing-hover`, `burst-hover`, `fade-left-hover`, `fade-right-hover`
 
+The Custom Element class (`BoxIconElemnet`) exposes the following static members:
 
+-   `tagName`: property that holds the HTML element tag name. Default: `box-icon`
+-   `defined([tagName])`: Defines the Element in the custom element registry using either the tagName provided on input or the (default) the one defined on the Class.
+-   `cdnUrl`: property that holds the URL that will be used to retrieve the images. URL should point to the folder that contains the images. example: `//unpkg.com/boxicons@1.1.1/svg` (no trailing forward slash)
+-   `getIconSvg(iconName)`: method used to retrieve the SVG image. Should return a Promise that resolves with the SVG source (String).
 
 ## License
 
