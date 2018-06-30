@@ -34,7 +34,7 @@ export class BoxIconElement extends HTMLElement {
       'rotate',
       'flip',
       'animation',
-      'border',
+      'shape',
     ];
   }
 
@@ -101,6 +101,16 @@ export class BoxIconElement extends HTMLElement {
 :host([size=lg]) {
     width: 3.0rem;
     height: 3.0rem;
+}
+:host([shape=square]) {
+    padding: .25em;
+    border: .07em solid rgba(0,0,0,.1);
+    border-radius: .25em;
+}
+:host([shape=circle]) {
+    padding: .25em;
+    border: .07em solid rgba(0,0,0,.1);
+    border-radius: 50%;
 }
 #icon,
 svg {
