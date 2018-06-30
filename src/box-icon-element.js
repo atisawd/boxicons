@@ -37,6 +37,12 @@ TEMPLATE.innerHTML = `
     width: 3.0rem;
     height: 3.0rem;
 }
+
+:host([size]:not([size=""]):not([size=xs]):not([size=sm]):not([size=md]):not([size=lg])) {
+    width: auto;
+    height: auto;
+}
+
 :host([shape=square]) #icon {
     padding: .25em;
     border: .07em solid rgba(0,0,0,.1);
