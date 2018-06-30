@@ -6,6 +6,9 @@ import transformationsCss from '../static/css/transformations.css';
 
 //= ======================================================
 const CACHE = {}; // iconName: Promise()
+const CSS_CLASS_PREFIX = "bx-";
+const CSS_CLASS_PREFIX_ROTATE = `${CSS_CLASS_PREFIX}rotate-`;
+const CSS_CLASS_PREFIX_FLIP = `${CSS_CLASS_PREFIX}flip-`;
 
 
 /**
@@ -30,8 +33,8 @@ export class BoxIconElement extends HTMLElement {
       'size',
       'rotate',
       'flip',
-      'border',
       'animation',
+      'border',
     ];
   }
 
@@ -115,16 +118,42 @@ ${transformationsCss}
   }
 
   attributeChangedCallback(attr, oldVal, newVal) {
+      const $iconHolder = this._state.$iconHolder;
+
     switch (attr) {
       case 'name':
         handleNameChange(this, oldVal, newVal);
         break;
       case 'color':
-          this._state.$iconHolder.style.fill = newVal || "";
+          $iconHolder.style.fill = newVal || "";
         break;
       case 'size':
           handleSizeChange(this, oldVal, newVal);
         break;
+      case 'rotate':
+          if (oldVal) {
+              $iconHolder.classList.remove(`${CSS_CLASS_PREFIX_ROTATE}${oldVal}`);
+          }
+          if (newVal) {
+              $iconHolder.classList.add(`${CSS_CLASS_PREFIX_ROTATE}${newVal}`);
+          }
+        break;
+      case 'flip':
+          if (oldVal) {
+              $iconHolder.classList.remove(`${CSS_CLASS_PREFIX_FLIP}${oldVal}`);
+          }
+          if (newVal) {
+              $iconHolder.classList.add(`${CSS_CLASS_PREFIX_FLIP}${newVal}`);
+          }
+        break;
+        case 'animation':
+          if (oldVal) {
+              $iconHolder.classList.remove(`${CSS_CLASS_PREFIX}${oldVal}`);
+          }
+          if (newVal) {
+              $iconHolder.classList.add(`${CSS_CLASS_PREFIX}${newVal}`);
+          }
+            break;
     }
   }
 }
