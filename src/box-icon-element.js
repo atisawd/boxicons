@@ -1,12 +1,11 @@
 /* global BUILD */
-//
 import animationsCss from '../static/css/animations.css';
 import transformationsCss from '../static/css/transformations.css';
 
 
 //= ======================================================
 const CACHE = {}; // iconName: Promise()
-const CSS_CLASS_PREFIX = "bx-";
+const CSS_CLASS_PREFIX = 'bx-';
 const CSS_CLASS_PREFIX_ROTATE = `${CSS_CLASS_PREFIX}rotate-`;
 const CSS_CLASS_PREFIX_FLIP = `${CSS_CLASS_PREFIX}flip-`;
 
@@ -41,12 +40,13 @@ export class BoxIconElement extends HTMLElement {
     /**
      * Returns a promise that should resolve with a string - the svg source.
      *
-     * @param {String} iconUrl
-     *  The url to the icon that should be loaded.
+     * @param {String} iconName
+     *  The icon name (file name) to the icon that should be loaded.
      *
      * @return {Promise<String, Error>}
      */
-  static getIconSvg(iconUrl) {
+  static getIconSvg(iconName) {
+    const iconUrl = `${this.cdnUrl}/${iconName}.svg`;
     if (iconUrl && CACHE[iconUrl]) {
       return CACHE[iconUrl];
     }
@@ -128,42 +128,42 @@ ${transformationsCss}
   }
 
   attributeChangedCallback(attr, oldVal, newVal) {
-      const $iconHolder = this._state.$iconHolder;
+    const $iconHolder = this._state.$iconHolder;
 
     switch (attr) {
       case 'name':
         handleNameChange(this, oldVal, newVal);
         break;
       case 'color':
-          $iconHolder.style.fill = newVal || "";
+        $iconHolder.style.fill = newVal || '';
         break;
       case 'size':
-          handleSizeChange(this, oldVal, newVal);
+        handleSizeChange(this, oldVal, newVal);
         break;
       case 'rotate':
-          if (oldVal) {
-              $iconHolder.classList.remove(`${CSS_CLASS_PREFIX_ROTATE}${oldVal}`);
-          }
-          if (newVal) {
-              $iconHolder.classList.add(`${CSS_CLASS_PREFIX_ROTATE}${newVal}`);
-          }
+        if (oldVal) {
+          $iconHolder.classList.remove(`${CSS_CLASS_PREFIX_ROTATE}${oldVal}`);
+        }
+        if (newVal) {
+          $iconHolder.classList.add(`${CSS_CLASS_PREFIX_ROTATE}${newVal}`);
+        }
         break;
       case 'flip':
-          if (oldVal) {
-              $iconHolder.classList.remove(`${CSS_CLASS_PREFIX_FLIP}${oldVal}`);
-          }
-          if (newVal) {
-              $iconHolder.classList.add(`${CSS_CLASS_PREFIX_FLIP}${newVal}`);
-          }
+        if (oldVal) {
+          $iconHolder.classList.remove(`${CSS_CLASS_PREFIX_FLIP}${oldVal}`);
+        }
+        if (newVal) {
+          $iconHolder.classList.add(`${CSS_CLASS_PREFIX_FLIP}${newVal}`);
+        }
         break;
-        case 'animation':
-          if (oldVal) {
-              $iconHolder.classList.remove(`${CSS_CLASS_PREFIX}${oldVal}`);
-          }
-          if (newVal) {
-              $iconHolder.classList.add(`${CSS_CLASS_PREFIX}${newVal}`);
-          }
-            break;
+      case 'animation':
+        if (oldVal) {
+          $iconHolder.classList.remove(`${CSS_CLASS_PREFIX}${oldVal}`);
+        }
+        if (newVal) {
+          $iconHolder.classList.add(`${CSS_CLASS_PREFIX}${newVal}`);
+        }
+        break;
     }
   }
 }
@@ -174,31 +174,32 @@ function handleNameChange(inst, oldVal, newVal) {
   state.$iconHolder.textContent = '';
 
   if (newVal) {
-    const iconUrl = `${inst.constructor.cdnUrl}/${newVal}.svg`;
-    inst.constructor.getIconSvg(iconUrl)
+    inst.constructor.getIconSvg(newVal)
         .then((iconData) => {
           if (state.currentName === newVal) {
             state.$iconHolder.innerHTML = iconData;
           }
         })
         .catch((error) => {
-          console.error(`Failed to load icon: ${iconUrl + "\n"}${error}`); //eslint-disable-line
+          console.error(`Failed to load icon: ${newVal + "\n"}${error}`); //eslint-disable-line
         });
   }
 }
 
 function handleSizeChange(inst, oldVal, newVal) {
-    const state = inst._state;
+  const state = inst._state;
 
-    if (state.size) {
-        state.$iconHolder.style.width = state.$iconHolder.style.height = "";
-        state.size = state.sizeType = null;
-    }
+  if (state.size) {
+    state.$iconHolder.style.width = state.$iconHolder.style.height = '';
+    state.size = state.sizeType = null;
+  }
 
     // If the size is not one of the short-hand ones, then it must be a
     // css size unit - add it directly to the icon holder.
-    if (newVal && !/^(xs|sm|md|lg)$/.test(state.size)) {
-        state.size = newVal.trim();
-        state.$iconHolder.style.width = state.$iconHolder.style.height = state.size;
-    }
+  if (newVal && !/^(xs|sm|md|lg)$/.test(state.size)) {
+    state.size = newVal.trim();
+    state.$iconHolder.style.width = state.$iconHolder.style.height = state.size;
+  }
 }
+
+export default BoxIconElement;
