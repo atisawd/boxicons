@@ -44,7 +44,24 @@ export class BoxIconElement extends HTMLElement {
      * @return {Promise<String, Error>}
      */
   static getIconSvg(iconUrl) {
-
+    if (iconUrl && CACHE[iconUrl]) {
+      return CACHE[iconUrl];
+    }
+    CACHE[iconUrl] = new Promise((resolve, reject) => {
+      const request = new XMLHttpRequest();
+      request.addEventListener('load', function () {
+        if (this.status < 200 || this.status >= 300) {
+          reject(new Error(`${this.status} ${this.responseText}`));
+          return;
+        }
+        resolve(this.responseText);
+      });
+      request.onerror = reject;
+      request.onabort = reject;
+      request.open('GET', iconUrl);
+      request.send();
+    });
+    return CACHE[iconUrl];
   }
 
     /**
@@ -63,8 +80,8 @@ export class BoxIconElement extends HTMLElement {
 <style>
 :host {
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 1em;
+  height: 1em;
 }
 #icon,
 svg {
@@ -76,10 +93,36 @@ ${transformationsCss}
 </style>
 <div id="icon"></div>`;
 
-    this.$iconHolder = this.$ui.getElementById('icon');
+    this._state = {
+      $iconHolder: this.$ui.getElementById('icon'),
+    };
   }
 
   attributeChangedCallback(attr, oldVal, newVal) {
-    // handle live changes
+    switch (attr) {
+      case 'name':
+        handleNameChange(this, oldVal, newVal);
+        break;
+
+    }
   }
 }
+
+function handleNameChange(inst, oldVal, newVal) {
+  inst._state.currentName = newVal;
+  inst._state.$iconHolder.textContent = '';
+
+  if (newVal) {
+    const iconUrl = `${inst.constructor.cdnUrl}/${newVal}.svg`;
+    inst.constructor.getIconSvg(iconUrl)
+        .then((iconData) => {
+          if (inst._state.currentName === newVal) {
+            inst._state.$iconHolder.innerHTML = iconData;
+          }
+        })
+        .catch((error) => {
+          console.error(`Failed to load icon: ${iconUrl + "\n"}${error}`); //eslint-disable-line
+        });
+  }
+}
+
