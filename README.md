@@ -62,50 +62,6 @@ Instead of installing you may use the remote version
 [Check out all the icons here!](https://boxicons.com)
 
 
-### Using via Web Component
-
-Boxicons includes a Custom Element that makes using icons easy and efficient. To use it, add the `box-icon-element.js` file to the page:
-
-```html
-<script src="https://unpkg.com/boxicons@latest/dist/box-icon-element.js"></script>
-```
-
-To use an icon, add the `<box-icon>` element to the location where the icon should be displayed:
-
-```html
-<box-icon name="hot"></box-icon>
-```
-
-The `<box-icon>` custom element supports the following attributes:
-
-```html
-<box-icon
-    name="adjust|alarms|etc...."
-    color="blue|red|etc..."
-    size="xs|sm|md|lg|cssSize"
-    rotate="90|180|270"
-    flip="horizontal|vertical"
-    shape="square|circle"
-    animation="spin|tada|etc..."
-></box-icon>
-```
-
--   `name` : (REQUIRED) the name of the icon to be displayed
--   `color`: A color for the icon.
--   `size`: The size for the icon. It supports one of two types of values: 
-    -   One of the followign shortcuts: `xs`, `sm`, `md`, `lg`
-    -   A css unit size (ex. `60px`) 
--   `rotate`: one of the following values: `90`, `180`, `270`
--   `flip`:  one of the following values: `horizontal`, `vertical`
--   `shape`: one of the following values: `square`, `circle`
--   `animation`: One of the following values: `spin`, `tada`, `flashing`, `burst`, `fade-left`, `fade-right`, `spin-hover`, `tada-hover`, `flashing-hover`, `burst-hover`, `fade-left-hover`, `fade-right-hover`
-
-The Custom Element class (`BoxIconElemnet`) exposes the following static members:
-
--   `tagName`: property that holds the HTML element tag name. Default: `box-icon`
--   `defined([tagName])`: Defines the Element in the custom element registry using either the tagName provided on input or the (default) the one defined on the Class.
--   `cdnUrl`: property that holds the URL that will be used to retrieve the images. URL should point to the folder that contains the images. example: `//unpkg.com/boxicons@1.1.1/svg` (no trailing forward slash)
--   `getIconSvg(iconName)`: method used to retrieve the SVG image. Should return a Promise that resolves with the SVG source (String).
 
 ## License
 
