@@ -5,13 +5,12 @@
 
 _High Quality web friendly icons_
 
-'Boxicons' is a carefully designed open source iconset with 400+ icons. It's crafted to look enrich your website/app experience.
+'Boxicons' is a carefully designed open source iconset with 700+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v1.1.0!_
+_Announcing Boxicons v1.5.0!_
 
-14 more icons have been added to the list, and some pre built CSS classes to perform various functions like, rotate, animate and add border to the icons.
-- A few bug fixes on the existing icons has been to make it pixel perfect.
+Solid icons have been added with a seperate logos category
 
 You can check out the detailed documentation [here](https://boxicons.com/get-started)
 
@@ -45,67 +44,25 @@ Instead of installing you may use the remote version
 ```html
 <head>
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@1.1.0/css/boxicons.min.css">
+  href="https://cdn.jsdelivr.net/npm/boxicons@1.5.0/css/boxicons.min.css">
   <!-- or -->
   <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@1.1.0/css/boxicons.min.css">
+  href="https://unpkg.com/boxicons@1.5.0/css/boxicons.min.css">
 </head>
 ```
 
 
-2. To use an icon on your page, add a class 'bx' and seperate class with the icons name with a prefix 'bx-':
+2. To use an icon on your page, add a class 'bx' and seperate class with the icons name with a prefix 'bx-' for regular icons , 'bxs-' for solid icons and 'bxl-' for logos:
 
 ```html
 <i class="bx bx-hot"></i>
+<i class="bx bxs-hot"></i>
+<i class="bx bxl-facebook-square"></i>
 ```
 
 [Check out all the icons here!](https://boxicons.com)
 
 
-### Using via Web Component
-
-Boxicons includes a Custom Element that makes using icons easy and efficient. To use it, add the `box-icon-element.js` file to the page:
-
-```html
-<script src="https://unpkg.com/boxicons@latest/dist/box-icon-element.js"></script>
-```
-
-To use an icon, add the `<box-icon>` element to the location where the icon should be displayed:
-
-```html
-<box-icon name="hot"></box-icon>
-```
-
-The `<box-icon>` custom element supports the following attributes:
-
-```html
-<box-icon
-    name="adjust|alarms|etc...."
-    color="blue|red|etc..."
-    size="xs|sm|md|lg|cssSize"
-    rotate="90|180|270"
-    flip="horizontal|vertical"
-    shape="square|circle"
-    animation="spin|tada|etc..."
-></box-icon>
-```
-
--   `name` : (REQUIRED) the name of the icon to be displayed
--   `color`: A color for the icon.
--   `size`: The size for the icon. It supports one of two types of values: 
-    -   One of the followign shortcuts: `xs`, `sm`, `md`, `lg`
-    -   A css unit size (ex. `60px`) 
--   `rotate`: one of the following values: `90`, `180`, `270`
--   `flip`:  one of the following values: `horizontal`, `vertical`
--   `shape`: one of the following values: `square`, `circle`
--   `animation`: One of the following values: `spin`, `tada`, `flashing`, `burst`, `fade-left`, `fade-right`, `spin-hover`, `tada-hover`, `flashing-hover`, `burst-hover`, `fade-left-hover`, `fade-right-hover`
-
-The Custom Element class (`BoxIconElemnet`) exposes the following static members:
-
--   `tagName`: property that holds the HTML element tag name. Default: `box-icon`
--   `defined([tagName])`: Defines the Element in the custom element registry using either the tagName provided on input or the (default) the one defined on the Class.
--   `cdnUrl`: property that holds the URL that will be used to retrieve the images. URL should point to the folder that contains the images. example: `//unpkg.com/boxicons@1.1.1/svg` (no trailing forward slash)
--   `getIconSvg(iconName)`: method used to retrieve the SVG image. Should return a Promise that resolves with the SVG source (String).
 
 ## License
 

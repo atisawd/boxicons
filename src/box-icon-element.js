@@ -140,7 +140,7 @@ export class BoxIconElement extends HTMLElement {
   constructor() {
     super();
     this.$ui = this.attachShadow({ mode: 'open' });
-    this.$ui.appendChild(this.ownerDocument.importNode(TEMPLATE.content, true));
+    //this.$ui.appendChild(this.ownerDocument.importNode(TEMPLATE.content, true));
     if (usingShadyCss()) {
         GLOBAL.ShadyCSS.styleElement(this);
     }
