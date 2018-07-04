@@ -8,7 +8,7 @@ _High Quality web friendly icons_
 'Boxicons' is a carefully designed open source iconset with 700+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v1.5.0!_
+_Announcing Boxicons v1.5.1!_
 
 Solid icons have been added with a seperate logos category
 
@@ -44,10 +44,10 @@ Instead of installing you may use the remote version
 ```html
 <head>
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@1.5.0/css/boxicons.min.css">
+  href="https://cdn.jsdelivr.net/npm/boxicons@1.5.1/css/boxicons.min.css">
   <!-- or -->
   <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@1.5.0/css/boxicons.min.css">
+  href="https://unpkg.com/boxicons@1.5.1/css/boxicons.min.css">
 </head>
 ```
 
