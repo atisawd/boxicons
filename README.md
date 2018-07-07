@@ -59,7 +59,7 @@ Instead of installing you may use the remote version
 ```
 ### Using via Web Component
 
-Boxicons includes a Custom Element that makes using icons easy and efficient. To use it, add the `box-icon-element.js` file to the page:
+Boxicons includes a Custom Element that makes using icons easy and efficient. To use it, add the `boxicons.js` file to the page:
 
 ```html
 <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
