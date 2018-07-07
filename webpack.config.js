@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     library: 'BoxIconElement',
     libraryTarget: 'umd',
-    filename: 'box-icon-element.js',
+    filename: 'boxicons.js',
   },
   devtool: 'source-map',
   module: {

@@ -42,13 +42,20 @@ TEMPLATE.innerHTML = `
     width: auto;
     height: auto;
 }
-
-:host([shape=square]) #icon {
+:host([pull=left]) #icon {
+    float: left;
+    margin-right: .3em!important;
+}
+:host([pull=right]) #icon {
+    float: right;
+    margin-left: .3em!important;
+}
+:host([border=square]) #icon {
     padding: .25em;
     border: .07em solid rgba(0,0,0,.1);
     border-radius: .25em;
 }
-:host([shape=circle]) #icon {
+:host([border=circle]) #icon {
     padding: .25em;
     border: .07em solid rgba(0,0,0,.1);
     border-radius: 50%;
@@ -74,7 +81,7 @@ export class BoxIconElement extends HTMLElement {
   static get cdnUrl() {
       // BUILD.DATA.VERSION is injected by webpack during a build.
       // Value is same as package.json#version property.
-    return `//unpkg.com/boxicons@${BUILD.DATA.VERSION}/svg`;
+    return `//unpkg.com/boxicons@latest/svg`;
   }
     /**
      * The html tag name to be use
@@ -87,10 +94,12 @@ export class BoxIconElement extends HTMLElement {
       'name',
       'color',
       'size',
+      'type',
       'rotate',
       'flip',
       'animation',
-      'shape',
+      'border',
+      'pull'
     ];
   }
 
@@ -102,8 +111,15 @@ export class BoxIconElement extends HTMLElement {
      *
      * @return {Promise<String, Error>}
      */
-  static getIconSvg(iconName) {
-    const iconUrl = `${this.cdnUrl}/${iconName}.svg`;
+  static getIconSvg(iconName,type) {
+    var iconUrl = `${this.cdnUrl}/regular/bx-${iconName}.svg`;
+    console.log(type);
+    if(type==='solid'){
+      iconUrl = `${this.cdnUrl}/solid/bxs-${iconName}.svg`;
+    }
+    else if(type==='logo'){
+      iconUrl = `${this.cdnUrl}/logos/bxl-${iconName}.svg`;
+    }
     if (iconUrl && CACHE[iconUrl]) {
       return CACHE[iconUrl];
     }
@@ -140,7 +156,7 @@ export class BoxIconElement extends HTMLElement {
   constructor() {
     super();
     this.$ui = this.attachShadow({ mode: 'open' });
-    //this.$ui.appendChild(this.ownerDocument.importNode(TEMPLATE.content, true));
+    this.$ui.appendChild(this.ownerDocument.importNode(TEMPLATE.content, true));
     if (usingShadyCss()) {
         GLOBAL.ShadyCSS.styleElement(this);
     }
@@ -161,6 +177,9 @@ export class BoxIconElement extends HTMLElement {
         break;
       case 'size':
         handleSizeChange(this, oldVal, newVal);
+        break;
+      case 'type':
+        handleTypeChange(this, oldVal, newVal);
         break;
       case 'rotate':
         if (oldVal) {
@@ -202,7 +221,7 @@ function handleNameChange(inst, oldVal, newVal) {
   state.$iconHolder.textContent = '';
 
   if (newVal) {
-    inst.constructor.getIconSvg(newVal)
+    inst.constructor.getIconSvg(newVal,state.type)
         .then((iconData) => {
           if (state.currentName === newVal) {
             state.$iconHolder.innerHTML = iconData;
@@ -213,7 +232,20 @@ function handleNameChange(inst, oldVal, newVal) {
         });
   }
 }
+function handleTypeChange(inst, oldVal, newVal) {
+  const state = inst._state;
 
+  if (state.type) {
+    state.type = null;
+  }
+
+  if (newVal && (newVal==='solid' || newVal==='logo')) {
+    state.type = newVal;
+  }
+  else{
+    state.type = 'regular';
+  } 
+}
 function handleSizeChange(inst, oldVal, newVal) {
   const state = inst._state;
 
