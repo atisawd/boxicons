@@ -23,7 +23,7 @@ $ npm install boxicons --save
 import the module
 
 ```javscript
-import 'boxicons/dist/boxicons.js';
+import 'boxicons';
 ```
 ## Usage
 
