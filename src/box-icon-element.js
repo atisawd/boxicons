@@ -91,10 +91,10 @@ export class BoxIconElement extends HTMLElement {
 
   static get observedAttributes() {
     return [
+      'type',
       'name',
       'color',
       'size',
-      'type',
       'rotate',
       'flip',
       'animation',
@@ -113,7 +113,6 @@ export class BoxIconElement extends HTMLElement {
      */
   static getIconSvg(iconName,type) {
     var iconUrl = `${this.cdnUrl}/regular/bx-${iconName}.svg`;
-    console.log(type);
     if(type==='solid'){
       iconUrl = `${this.cdnUrl}/solid/bxs-${iconName}.svg`;
     }
@@ -169,6 +168,10 @@ export class BoxIconElement extends HTMLElement {
     const $iconHolder = this._state.$iconHolder;
 
     switch (attr) {
+
+      case 'type':
+        handleTypeChange(this, oldVal, newVal);
+        break;
       case 'name':
         handleNameChange(this, oldVal, newVal);
         break;
@@ -177,9 +180,6 @@ export class BoxIconElement extends HTMLElement {
         break;
       case 'size':
         handleSizeChange(this, oldVal, newVal);
-        break;
-      case 'type':
-        handleTypeChange(this, oldVal, newVal);
         break;
       case 'rotate':
         if (oldVal) {
@@ -214,27 +214,9 @@ export class BoxIconElement extends HTMLElement {
       }
   }
 }
-
-function handleNameChange(inst, oldVal, newVal) {
-  const state = inst._state;
-  state.currentName = newVal;
-  state.$iconHolder.textContent = '';
-
-  if (newVal) {
-    inst.constructor.getIconSvg(newVal,state.type)
-        .then((iconData) => {
-          if (state.currentName === newVal) {
-            state.$iconHolder.innerHTML = iconData;
-          }
-        })
-        .catch((error) => {
-          console.error(`Failed to load icon: ${newVal + "\n"}${error}`); //eslint-disable-line
-        });
-  }
-}
 function handleTypeChange(inst, oldVal, newVal) {
   const state = inst._state;
-
+  state.$iconHolder.textContent = '';
   if (state.type) {
     state.type = null;
   }
@@ -245,7 +227,36 @@ function handleTypeChange(inst, oldVal, newVal) {
   else{
     state.type = 'regular';
   } 
+  if(state.currentName!== undefined){
+    inst.constructor.getIconSvg(state.currentName,state.type)
+        .then((iconData) => {
+          if (state.type === newVal) {
+            state.$iconHolder.innerHTML = iconData;
+          }
+        })
+        .catch((error) => {
+          console.error(`Failed to load icon: ${state.currentName + "\n"}${error}`); //eslint-disable-line
+        });}
 }
+function handleNameChange(inst, oldVal, newVal) {
+  const state = inst._state;
+  state.currentName = newVal;
+  state.$iconHolder.textContent = '';
+
+  if (newVal) {
+    if(state.type!== undefined){
+    inst.constructor.getIconSvg(newVal,state.type)
+        .then((iconData) => {
+          if (state.currentName === newVal) {
+            state.$iconHolder.innerHTML = iconData;
+          }
+        })
+        .catch((error) => {
+          console.error(`Failed to load icon: ${newVal + "\n"}${error}`); //eslint-disable-line
+        });}
+  }
+}
+
 function handleSizeChange(inst, oldVal, newVal) {
   const state = inst._state;
 
