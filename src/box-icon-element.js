@@ -154,6 +154,7 @@ export class BoxIconElement extends HTMLElement {
 
   constructor() {
     super();
+
     this.$ui = this.attachShadow({ mode: 'open' });
     this.$ui.appendChild(this.ownerDocument.importNode(TEMPLATE.content, true));
     if (usingShadyCss()) {
@@ -161,6 +162,7 @@ export class BoxIconElement extends HTMLElement {
     }
     this._state = {
       $iconHolder: this.$ui.getElementById('icon'),
+      type: this.getAttribute('type')
     };
   }
 
@@ -244,6 +246,9 @@ function handleNameChange(inst, oldVal, newVal) {
   state.$iconHolder.textContent = '';
 
   if (newVal) {
+      
+    
+    
     if(state.type!== undefined){
     inst.constructor.getIconSvg(newVal,state.type)
         .then((iconData) => {
