@@ -8,7 +8,7 @@ _High Quality web friendly icons_
 'Boxicons' is a carefully designed open source iconset with 700+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v1.5.3!_
+_Announcing Boxicons v1.5.4!_
 
 Load the icons as web component , load only the icons you need .
 
