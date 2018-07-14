@@ -8,8 +8,9 @@ _High Quality web friendly icons_
 'Boxicons' is a carefully designed open source iconset with 700+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v1.5.6!_
+_Announcing Boxicons v1.6.0!_
 
+Total of 750 icons in regular, solid styles.
 Load the icons as web component , load only the icons you need .
 
 
@@ -70,15 +71,16 @@ To use an icon, add the `<box-icon>` element to the location where the icon shou
 ```html
 <box-icon name="hot"></box-icon>
 ```
-  To use solid icons or logos add attribute `type` as solid or logo 
+  To use solid icons or logos add attribute `type` as solid or logo before the name
  ```html
-<box-icon name="hot" type="solid"></box-icon>
-<box-icon name="facebook-square" type="logo"></box-icon>
+<box-icon type="solid" name="hot"></box-icon>
+<box-icon type="logo" name="facebook-square"></box-icon>
 ```                  
 The `<box-icon>` custom element supports the following attributes:
 
 ```html
 <box-icon
+    type = "regular|solid|logo"
     name="adjust|alarms|etc...."
     color="blue|red|etc..."
     size="xs|sm|md|lg|cssSize"
@@ -86,11 +88,10 @@ The `<box-icon>` custom element supports the following attributes:
     flip="horizontal|vertical"
     border="square|circle"
     animation="spin|tada|etc..."
-    type = "regular|solid|logo"
     pull = "left|right"
 ></box-icon>
 ```
-
+-   `type`: Should always be first and be one of the following values: `regular`,`solid`, `logo`
 -   `name` : (REQUIRED) the name of the icon to be displayed
 -   `color`: A color for the icon.
 -   `size`: The size for the icon. It supports one of two types of values: 
@@ -100,7 +101,6 @@ The `<box-icon>` custom element supports the following attributes:
 -   `flip`:  one of the following values: `horizontal`, `vertical`
 -   `border`: one of the following values: `square`, `circle`
 -   `animation`: One of the following values: `spin`, `tada`, `flashing`, `burst`, `fade-left`, `fade-right`, `spin-hover`, `tada-hover`, `flashing-hover`, `burst-hover`, `fade-left-hover`, `fade-right-hover`
--   `type`: one of the following values: `regular`,`solid`, `logo`
 -   `pull`: one of the following values: `left`,`right`
 The Custom Element class (`BoxIconElement`) exposes the following static members:
 
