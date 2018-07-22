@@ -3,15 +3,18 @@
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/atisawd/boxicons.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fatisawd%2Fboxicons)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/atisawd)
 
+
 _High Quality web friendly icons_
 
 'Boxicons' is a carefully designed open source iconset with 700+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v1.6.0!_
+_Announcing Boxicons v1.7.0!_
 
-Total of 750 icons in regular, solid styles.
-Load the icons as web component , load only the icons you need .
+Total of 798 icons in regular, solid styles.
+
+- Woff2 font added
+- 48 new icons added
 
 
 ## Installation
