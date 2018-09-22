@@ -1,6 +1,6 @@
 {
   "name": "boxicons",
-  "version": "1.5.4",
+  "version": "1.7.1",
   "private": true,
   "description": "High Quality web friendly icons",
   "scripts": {
@@ -15,12 +15,16 @@
   "author": "Atisa(Aniket Suvarna)  <atisawd@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-interactive": "^0.8.1",
     "react-router-dom": "^4.2.2"
   },
+  "resolutions": {
+  "eslint-scope": "3.7.1"
+},
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -41,4 +45,5 @@
     "webpack-dev-server": "^2.8.2",
     "wrapper-webpack-plugin": "^1.0.0"
   }
+
 }

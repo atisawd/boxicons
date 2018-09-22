@@ -50,7 +50,7 @@ module.exports = {
       },
     }),
     new WrapperPlugin({
-      test: /box-icon-element\.js$/,
+      test: /boxicons\.js$/,
       header: getWrapper('header'),
       footer: getWrapper('footer'),
     }),

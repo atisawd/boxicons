@@ -3,14 +3,20 @@
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/atisawd/boxicons.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fatisawd%2Fboxicons)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/atisawd)
 
+
+
 _High Quality web friendly icons_
 
 'Boxicons' is a carefully designed open source iconset with 700+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v1.5.4!_
+_Announcing Boxicons v1.7.1!_
 
-Load the icons as web component , load only the icons you need .
+Total of 798 icons in regular, solid styles.
+
+- Woff2 font added
+- 48 new icons added
+- Corrections to comply with the Material system icon rules
 
 
 ## Installation
@@ -23,7 +29,7 @@ $ npm install boxicons --save
 import the module
 
 ```javscript
-import 'boxicons/dist/boxicons.js';
+import 'boxicons';
 ```
 ## Usage
 
@@ -62,7 +68,7 @@ Instead of installing you may use the remote version
 Boxicons includes a Custom Element that makes using icons easy and efficient. To use it, add the `box-icon-element.js` file to the page:
 
 ```html
-<script src="https://unpkg.com/boxicons@latest/dist/box-icon-element.js"></script>
+<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 ```
 
 To use an icon, add the `<box-icon>` element to the location where the icon should be displayed:
@@ -70,15 +76,16 @@ To use an icon, add the `<box-icon>` element to the location where the icon shou
 ```html
 <box-icon name="hot"></box-icon>
 ```
-  To use solid icons or logos add attribute `type` as solid or logo 
+  To use solid icons or logos add attribute `type` as solid or logo before the name
  ```html
-<box-icon name="hot" type="solid"></box-icon>
-<box-icon name="facebook-square" type="logo"></box-icon>
+<box-icon type="solid" name="hot"></box-icon>
+<box-icon type="logo" name="facebook-square"></box-icon>
 ```                  
 The `<box-icon>` custom element supports the following attributes:
 
 ```html
 <box-icon
+    type = "regular|solid|logo"
     name="adjust|alarms|etc...."
     color="blue|red|etc..."
     size="xs|sm|md|lg|cssSize"
@@ -86,11 +93,10 @@ The `<box-icon>` custom element supports the following attributes:
     flip="horizontal|vertical"
     border="square|circle"
     animation="spin|tada|etc..."
-    type = "regular|solid|logo"
     pull = "left|right"
 ></box-icon>
 ```
-
+-   `type`: Should always be first and be one of the following values: `regular`,`solid`, `logo`
 -   `name` : (REQUIRED) the name of the icon to be displayed
 -   `color`: A color for the icon.
 -   `size`: The size for the icon. It supports one of two types of values: 
@@ -100,7 +106,6 @@ The `<box-icon>` custom element supports the following attributes:
 -   `flip`:  one of the following values: `horizontal`, `vertical`
 -   `border`: one of the following values: `square`, `circle`
 -   `animation`: One of the following values: `spin`, `tada`, `flashing`, `burst`, `fade-left`, `fade-right`, `spin-hover`, `tada-hover`, `flashing-hover`, `burst-hover`, `fade-left-hover`, `fade-right-hover`
--   `type`: one of the following values: `regular`,`solid`, `logo`
 -   `pull`: one of the following values: `left`,`right`
 The Custom Element class (`BoxIconElement`) exposes the following static members:
 
