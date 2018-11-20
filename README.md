@@ -100,7 +100,7 @@ The `<box-icon>` custom element supports the following attributes:
 -   `name` : (REQUIRED) the name of the icon to be displayed
 -   `color`: A color for the icon.
 -   `size`: The size for the icon. It supports one of two types of values: 
-    -   One of the followign shortcuts: `xs`, `sm`, `md`, `lg`
+    -   One of the following shortcuts: `xs`, `sm`, `md`, `lg`
     -   A css unit size (ex. `60px`) 
 -   `rotate`: one of the following values: `90`, `180`, `270`
 -   `flip`:  one of the following values: `horizontal`, `vertical`
