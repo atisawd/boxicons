@@ -121,10 +121,10 @@ The Custom Element class (`BoxIconElement`) exposes the following static members
 
 ## License
 
-The icons (.svg) files are free to download and are licensed under CC 4.0 . By downloading it is assumed that you agree with the terms mentioned in CC 4.0.
-The fonts files are licensed under SIL OFL 1.1
-Attribution is not required but is appreciated
-Other files which are not fonts or icons are licensed under the MIT License
+- The icons (.svg) files are free to download and are licensed under CC 4.0 By downloading it is assumed that you agree with the terms mentioned in CC 4.0.
+- The fonts files are licensed under SIL OFL 1.1.
+- Attribution is not required but is appreciated.
+- Other files which are not fonts or icons are licensed under the MIT License.
 
 [You can read more about the license here!](https://boxicons.com/get-started#license)
 
