@@ -7,15 +7,14 @@
 
 _High Quality web friendly icons_
 
-'Boxicons' is a carefully designed open source iconset with 700+ icons. It's crafted to look enrich your website/app experience.
+'Boxicons' is a carefully designed open source iconset with 600+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v1.7.1!_
+_Announcing Boxicons v1.9.2!_
 
-Total of 798 icons in regular, solid styles.
+New icons added in regular, solid styles.
 
-- Woff2 font added
-- 48 new icons added
+- Improvements on the current icons
 - Corrections to comply with the Material system icon rules
 
 
@@ -100,7 +99,7 @@ The `<box-icon>` custom element supports the following attributes:
 -   `name` : (REQUIRED) the name of the icon to be displayed
 -   `color`: A color for the icon.
 -   `size`: The size for the icon. It supports one of two types of values: 
-    -   One of the followign shortcuts: `xs`, `sm`, `md`, `lg`
+    -   One of the following shortcuts: `xs`, `sm`, `md`, `lg`
     -   A css unit size (ex. `60px`) 
 -   `rotate`: one of the following values: `90`, `180`, `270`
 -   `flip`:  one of the following values: `horizontal`, `vertical`
@@ -121,7 +120,12 @@ The Custom Element class (`BoxIconElement`) exposes the following static members
 
 ## License
 
-[You can read the license here!](https://boxicons.com/get-started#license)
+The icons (.svg) files are free to download and are licensed under CC 4.0 . By downloading it is assumed that you agree with the terms mentioned in CC 4.0.
+The fonts files are licensed under SIL OFL 1.1
+Attribution is not required but is appreciated
+Other files which are not fonts or icons are licensed under the MIT License
+
+[You can read more about the license here!](https://boxicons.com/get-started#license)
 
 
 ## Contributing
