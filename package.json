@@ -12,8 +12,18 @@
     "type": "git",
     "url": "git+https://github.com/atisawd/boxicons.git"
   },
-  "author": "Atisa(Aniket Suvarna)  <atisawd@gmail.com>",
-  "license": "MIT",
+  "author": {
+    "name": "Atisa",
+    "email": "atisawd@gmail.com",
+    "url": "https://github.com/atisawd"
+  },
+  "bugs": {
+    "url": "https://github.com/atisawd/boxicons/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atisawd/boxicons.git"
+  },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.0.2",
     "prop-types": "^15.6.0",
@@ -44,6 +54,10 @@
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2",
     "wrapper-webpack-plugin": "^1.0.0"
-  }
+  },
+  "bundleDependencies": false,
+  "license": "(CC-4.0 OR SIL-OFL-1.1 OR MIT)",
+  "main": "./dist/boxicons.js",
+  "style": "./css/boxicons.css"
 
 }

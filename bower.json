@@ -1,0 +1,18 @@
+{
+  "name": "boxicons",
+  "authors": [
+    "atisawd <atisawd@gmail.com>"
+  ],
+  "description": "High Quality web friendly icons",
+  "main": "./dist/boxicons.js",
+  "license": "MIT",
+  "homepage": "https://github.com/atisawd/boxicons",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+     "*.md"
+  ]
+}
