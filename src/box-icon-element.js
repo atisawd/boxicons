@@ -1,6 +1,6 @@
 /* global BUILD */
-import animationsCss from '../static/css/animations.css';
-import transformationsCss from '../static/css/transformations.css';
+import animationsCss from '../css/animations.css';
+import transformationsCss from '../css/transformations.css';
 
 
 //= ======================================================
