@@ -1,6 +1,6 @@
 {
   "name": "boxicons",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "High Quality web friendly icons",
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --hot --open",
@@ -31,6 +31,7 @@
     "eslint-scope": "3.7.1"
   },
   "devDependencies": {
+    "ajv": "^6.10.2",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
@@ -46,13 +47,13 @@
     "eslint-plugin-react": "^6.10.3",
     "svgo": "^1.0.5",
     "to-string-loader": "^1.1.5",
-    "webpack": "^3.6.0",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^2.8.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
     "wrapper-webpack-plugin": "^1.0.0"
   },
   "bundleDependencies": false,
-  "license": "(CC-4.0 OR SIL-OFL-1.1 OR MIT)",
+  "license": "(CC-BY-4.0 OR OFL-1.1 OR MIT)",
   "main": "./dist/boxicons.js",
   "style": "./css/boxicons.css"
 }
