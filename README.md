@@ -1,5 +1,5 @@
 # BoxIcons 
-[![GitHub issues](https://img.shields.io/github/issues/atisawd/boxicons.svg)](https://github.com/atisawd/boxicons/issues)
+[![Financial Contributors on Open Collective](https://opencollective.com/boxicons/all/badge.svg?label=financial+contributors)](https://opencollective.com/boxicons) [![GitHub issues](https://img.shields.io/github/issues/atisawd/boxicons.svg)](https://github.com/atisawd/boxicons/issues)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/atisawd/boxicons.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fatisawd%2Fboxicons)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/atisawd)
 
@@ -116,6 +116,36 @@ The Custom Element class (`BoxIconElement`) exposes the following static members
 [Check out all the icons here!](https://boxicons.com)
 
 
+
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/atisawd/boxicons/graphs/contributors"><img src="https://opencollective.com/boxicons/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/boxicons/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/boxicons"><img src="https://opencollective.com/boxicons/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/boxicons/contribute)]
+
+<a href="https://opencollective.com/boxicons/organization/0/website"><img src="https://opencollective.com/boxicons/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/1/website"><img src="https://opencollective.com/boxicons/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/2/website"><img src="https://opencollective.com/boxicons/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/3/website"><img src="https://opencollective.com/boxicons/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/4/website"><img src="https://opencollective.com/boxicons/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/5/website"><img src="https://opencollective.com/boxicons/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/6/website"><img src="https://opencollective.com/boxicons/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/7/website"><img src="https://opencollective.com/boxicons/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/8/website"><img src="https://opencollective.com/boxicons/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/boxicons/organization/9/website"><img src="https://opencollective.com/boxicons/organization/9/avatar.svg"></a>
 
 ## License
 
