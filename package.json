@@ -1,11 +1,11 @@
 {
   "name": "boxicons",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "High Quality web friendly icons",
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --hot --open",
     "build": "webpack -p",
-    "optimize-svg": "svgo --config=.svgo.yml -f static/img/svg"
+    "optimize-svg": "svgo --config=.svgo.yml -f svg"
   },
   "repository": {
     "type": "git",
