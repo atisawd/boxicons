@@ -1,4 +1,4 @@
-# BoxIcons 
+# boxicons 
 [![Financial Contributors on Open Collective](https://opencollective.com/boxicons/all/badge.svg?label=financial+contributors)](https://opencollective.com/boxicons) [![GitHub issues](https://img.shields.io/github/issues/atisawd/boxicons.svg)](https://github.com/atisawd/boxicons/issues)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/atisawd/boxicons.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fatisawd%2Fboxicons)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/atisawd)
@@ -7,12 +7,12 @@
 
 _High Quality web friendly icons_
 
-'Boxicons' is a carefully designed open source iconset with 1000+ icons. It's crafted to look enrich your website/app experience.
+'Boxicons' is a carefully designed open source iconset with 1500+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v2.0.7!_
+_Announcing Boxicons v2.0.8!_
 
-- 40+ icons added.
+- 20+ icons added.
 
 
 ## Installation
@@ -64,7 +64,7 @@ Instead of installing you may use the remote version
 Boxicons includes a Custom Element that makes using icons easy and efficient. To use it, add the `box-icon-element.js` file to the page:
 
 ```html
-<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+<script src="https://unpkg.com/boxicons@2.0.8/dist/boxicons.js"></script>
 ```
 
 To use an icon, add the `<box-icon>` element to the location where the icon should be displayed:

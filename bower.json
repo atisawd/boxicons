@@ -3,7 +3,7 @@
   "authors": [
     "atisawd <atisawd@gmail.com>"
   ],
-  "description": "High Quality web friendly icons",
+  "description": "High Quality Web Icons",
   "main": "./dist/boxicons.js",
   "license": "MIT",
   "homepage": "https://github.com/atisawd/boxicons",
