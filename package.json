@@ -1,11 +1,11 @@
 {
   "name": "boxicons",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "High Quality Web Icons",
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --hot --open",
-    "build": "webpack -p",
-    "optimize-svg": "svgo --config=.svgo.yml -f svg"
+    "build": "webpack -p ",
+    "optimize-svg": "svgo --config=svgo.config.js -f svg/regular && svgo --config=svgo.config.js -f svg/logos && svgo --config=svgo.config.js -f svg/solid"
   },
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
-    "svgo": "^1.0.5",
+    "svgo": "^2.3.1",
     "to-string-loader": "^1.1.5",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
