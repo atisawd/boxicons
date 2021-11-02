@@ -152,7 +152,7 @@ The fonts files are licensed under SIL OFL 1.1
 Attribution is not required but is appreciated
 Other files which are not fonts or icons are licensed under the MIT License
 
-[You can read more about the license here!](https://boxicons.com/get-started#license)
+[You can read more about the license here!](https://boxicons.com/usage#license)
 
 
 ## Contributing
