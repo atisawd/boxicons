@@ -1,6 +1,6 @@
 {
   "name": "boxicons",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "description": "High Quality Web Icons",
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --hot --open",
