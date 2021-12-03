@@ -521,6 +521,96 @@
 }
 
   
+  .bxl-meta:before {
+    content: "\ef27";
+  }
+  .bx-lemon:before {
+    content: "\ef28";
+  }
+  .bxs-lemon:before {
+    content: "\ef29";
+  }
+  .bx-cricket-ball:before {
+    content: "\ef0c";
+  }
+  .bx-baguette:before {
+    content: "\ef0d";
+  }
+  .bx-bowl-hot:before {
+    content: "\ef0e";
+  }
+  .bx-bowl-rice:before {
+    content: "\ef0f";
+  }
+  .bx-cable-car:before {
+    content: "\ef10";
+  }
+  .bx-candles:before {
+    content: "\ef11";
+  }
+  .bx-circle-half:before {
+    content: "\ef12";
+  }
+  .bx-circle-quarter:before {
+    content: "\ef13";
+  }
+  .bx-circle-three-quarter:before {
+    content: "\ef14";
+  }
+  .bx-cross:before {
+    content: "\ef15";
+  }
+  .bx-fork:before {
+    content: "\ef16";
+  }
+  .bx-knife:before {
+    content: "\ef17";
+  }
+  .bx-money-withdraw:before {
+    content: "\ef18";
+  }
+  .bx-popsicle:before {
+    content: "\ef19";
+  }
+  .bx-scatter-chart:before {
+    content: "\ef1a";
+  }
+  .bxs-baguette:before {
+    content: "\ef1b";
+  }
+  .bxs-bowl-hot:before {
+    content: "\ef1c";
+  }
+  .bxs-bowl-rice:before {
+    content: "\ef1d";
+  }
+  .bxs-cable-car:before {
+    content: "\ef1e";
+  }
+  .bxs-circle-half:before {
+    content: "\ef1f";
+  }
+  .bxs-circle-quarter:before {
+    content: "\ef20";
+  }
+  .bxs-circle-three-quarter:before {
+    content: "\ef21";
+  }
+  .bxs-cricket-ball:before {
+    content: "\ef22";
+  }
+  .bxs-invader:before {
+    content: "\ef23";
+  }
+  .bx-male-female:before {
+    content: "\ef24";
+  }
+  .bxs-popsicle:before {
+    content: "\ef25";
+  }
+  .bxs-tree-alt:before {
+    content: "\ef26";
+  }
   .bxl-venmo:before {
     content: "\e900";
   }
