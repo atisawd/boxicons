@@ -521,6 +521,72 @@
 }
 
   
+  .bxs-color:before {
+    content: "\ef39";
+  }
+  .bx-reflect-horizontal:before {
+    content: "\ef3a";
+  }
+  .bx-reflect-vertical:before {
+    content: "\ef3b";
+  }
+  .bx-color:before {
+    content: "\ef3c";
+  }
+  .bxl-mongodb:before {
+    content: "\ef3d";
+  }
+  .bxl-postgresql:before {
+    content: "\ef3e";
+  }
+  .bxl-deezer:before {
+    content: "\ef3f";
+  }
+  .bxs-hard-hat:before {
+    content: "\ef2a";
+  }
+  .bxs-home-alt-2:before {
+    content: "\ef2b";
+  }
+  .bxs-cheese:before {
+    content: "\ef2c";
+  }
+  .bx-home-alt-2:before {
+    content: "\ef2d";
+  }
+  .bx-hard-hat:before {
+    content: "\ef2e";
+  }
+  .bx-cheese:before {
+    content: "\ef2f";
+  }
+  .bx-cart-add:before {
+    content: "\ef30";
+  }
+  .bx-cart-download:before {
+    content: "\ef31";
+  }
+  .bx-no-signal:before {
+    content: "\ef32";
+  }
+  .bx-signal-1:before {
+    content: "\ef33";
+  }
+  .bx-signal-2:before {
+    content: "\ef34";
+  }
+  .bx-signal-3:before {
+    content: "\ef35";
+  }
+  .bx-signal-4:before {
+    content: "\ef36";
+  }
+  .bx-signal-5:before {
+    content: "\ef37";
+  }
+  .bxl-xing:before {
+    content: "\ef38";
+  }
   .bxl-meta:before {
     content: "\ef27";
   }
