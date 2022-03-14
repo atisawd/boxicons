@@ -81,7 +81,7 @@ export class BoxIconElement extends HTMLElement {
   static get cdnUrl() {
       // BUILD.DATA.VERSION is injected by webpack during a build.
       // Value is same as package.json#version property.
-    return `//unpkg.com/boxicons@${BUILD.DATA.VERSION}/svg`;
+    return `https://unpkg.com/boxicons@${BUILD.DATA.VERSION}/svg`;
   }
     /**
      * The html tag name to be use
