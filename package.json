@@ -49,7 +49,7 @@
     "to-string-loader": "^1.1.5",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0",
+    "webpack-dev-server": "^4.11.0",
     "wrapper-webpack-plugin": "^1.0.0"
   },
   "bundleDependencies": false,
