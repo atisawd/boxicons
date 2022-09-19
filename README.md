@@ -10,10 +10,10 @@ _High Quality web friendly icons_
 'Boxicons' is a carefully designed open source iconset with 1500+ icons. It's crafted to look enrich your website/app experience.
 
 
-_Announcing Boxicons v2.1.2!_
+_Announcing Boxicons v2.1.3!_
 
 - Fixed the errors with a few svgs, added viewbox
-- Added 22 new icons
+- Added 34 new icons
 
 
 ## Installation
@@ -65,7 +65,7 @@ Instead of installing you may use the remote version
 Boxicons includes a Custom Element that makes using icons easy and efficient. To use it, add the `box-icon-element.js` file to the page:
 
 ```html
-<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
 ```
 
 To use an icon, add the `<box-icon>` element to the location where the icon should be displayed:
