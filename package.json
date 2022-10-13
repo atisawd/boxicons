@@ -4,8 +4,9 @@
   "description": "High Quality Web Icons",
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --hot --open",
-    "build": "webpack -p ",
-    "optimize-svg": "svgo --config=svgo.config.js -f svg/regular && svgo --config=svgo.config.js -f svg/logos && svgo --config=svgo.config.js -f svg/solid"
+    "build": "npm run generate-icon-data && webpack -p ",
+    "optimize-svg": "svgo --config=svgo.config.js -f svg/regular && svgo --config=svgo.config.js -f svg/logos && svgo --config=svgo.config.js -f svg/solid",
+    "generate-icon-data": "node write-icon-data.js"
   },
   "repository": {
     "type": "git",
