@@ -25,7 +25,7 @@ $ npm install boxicons --save
 ```
 import the module
 
-```javscript
+```javascript
 import 'boxicons';
 ```
 ## Usage
