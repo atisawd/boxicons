@@ -23,6 +23,11 @@ To install via npm, simply do the following:
 ```bash
 $ npm install boxicons --save
 ```
+or install via yarn
+
+```bash
+$ yarn add boxicons
+```
 import the module
 
 ```javscript
