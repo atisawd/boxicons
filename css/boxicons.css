@@ -1171,6 +1171,9 @@
   .bxl-twitter:before {
     content: "\e982";
   }
+  .bxl-twitter-x:before {
+    content: "\ef62";
+  }
   .bxl-unity:before {
     content: "\e983";
   }
