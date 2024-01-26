@@ -5422,4 +5422,6 @@
   .bxs-zoom-out:before {
     content: "\ef0b";
   }
-  
+  .bxl-leetcode:before {
+    content: "\ef63";
+  }
